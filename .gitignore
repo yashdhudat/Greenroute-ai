@@ -1,20 +1,21 @@
-# Ignore Python virtual environments
+# Ignore virtual environments
 venv/
+backend/venv/
 Include/
 Lib/
 Scripts/
-__pycache__/
 
-# Ignore database and compiled files
-*.db
+# Ignore cache and database files
+__pycache__/
 *.pyc
 *.pyo
+*.db
 
 # Ignore system files
 .DS_Store
 Thumbs.db
 
-# Allow important backend files
+# --- ALLOW backend folder and all its source files ---
 !backend/
 !backend/*.py
 !backend/.gitignore
