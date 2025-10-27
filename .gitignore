@@ -1,9 +1,20 @@
-# Ignore Python virtual environment
-backend/venv/
-
-# Ignore database files
-backend/*.db
-
-# Ignore compiled Python files
+# Ignore Python virtual environments
+venv/
+Include/
+Lib/
+Scripts/
 __pycache__/
+
+# Ignore database and compiled files
+*.db
 *.pyc
+*.pyo
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Allow important backend files
+!backend/
+!backend/*.py
+!backend/.gitignore
